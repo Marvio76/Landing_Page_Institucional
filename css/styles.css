@@ -197,3 +197,85 @@ footer {
   padding: 40px 20px;
   font-weight: bold;
 }
+
+@media (max-width: 1024px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-images {
+    position: static;
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .hero-images img {
+    position: static;
+    width: 45%;
+  }
+
+  .content-img {
+    flex-direction: column;
+    text-align: center;
+    clip-path: none;
+    padding: 40px 20px;
+  }
+
+  .team-text {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  header nav {
+    margin-top: 10px;
+  }
+
+  header nav button {
+    margin-bottom: 5px;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+
+  .section-title {
+    font-size: 1.25rem;
+  }
+
+  .access h2 {
+    font-size: 1.2rem;
+  }
+
+  .faq h3 {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-text h1 {
+    font-size: 1.75rem;
+  }
+
+  .hero-images img {
+    width: 100%;
+    max-width: 150px;
+  }
+
+  .about-text, .team-text {
+    padding: 0 10px;
+  }
+}
