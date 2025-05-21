@@ -1,0 +1,199 @@
+
+body {
+  margin: 0;
+  font-family: 'Fredoka', sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: 900;
+  margin-bottom: 20px;
+  text-align: center;
+  border-left: none;
+}
+
+header {
+  background-color: #2563eb;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav button {
+  background: white;
+  color: #2563eb;
+  border: none;
+  padding: 10px 10px;
+  margin-left: 10px;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+header nav button:hover {
+  background-color: #e0e7ff;
+}
+
+.hero {
+  background-color: #2563eb;
+  color: white;
+  padding: 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #2563eb;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  z-index: 0;
+}
+
+.hero-text {
+  max-width: 500px;
+  z-index: 2;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+
+.hero-text p {
+  margin: 10px 0 20px;
+  font-size: 1.1rem;
+}
+
+a.btn-dashboard {
+  display: inline-block;
+  background: #2563eb;
+  color: white;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+a.btn-dashboard:hover {
+  background: #1d4ed8;
+}
+
+.hero-images {
+  position: relative;
+  width: 500px;
+  height: 280px;
+  z-index: 2;
+}
+
+.hero-images img {
+  width: 300px;
+  height: auto;
+  border-radius: 20px;
+  position: absolute;
+  transition: all 0.3s ease;
+}
+
+.hero-images img:first-child {
+  z-index: 2;
+  left: 0;
+  top: 0;
+}
+
+.hero-images img:last-child {
+  z-index: 1;
+  left: 160px;
+  top: 65px;
+}
+
+.about-text {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: justify;
+}
+
+.content-img {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #2563eb;
+  clip-path: polygon(0 0, 100% 10%, 100% 90%, 0% 100%);
+  padding: 60px 20px;
+  color: white;
+}
+
+.content-img img {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.team-text {
+  max-width: 50%;
+  color: white;
+}
+
+.access {
+  background: #eff6ff;
+  text-align: center;
+}
+
+.access h2 {
+  font-size: 1.5rem;
+  font-weight: 900;
+  max-width: 600px;
+  margin: 0 auto 20px;
+}
+
+.faq {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.faq h3 {
+  font-size: 1.5rem;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.faq-box {
+  background-color: #2563eb;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+footer {
+  background: #1e40af;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+  font-weight: bold;
+}
