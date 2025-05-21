@@ -1,11 +1,131 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/css_dasboard.css/from.css">
+    <link rel="stylesheet" href="imgens-ideb-pro-estado.css">
+    <link rel="stylesheet" href="css/css_dasboard.css/cards.css">
+    <link rel="stylesheet" href="css/css_dasboard.css/Perguntas_Frequentes.css">
 </head>
+
 <body>
-    <h1>teste de pagina</h1>
+    <header>
+        <div class="voltar">
+            <a href="index.html" class="btn-voltar">
+                <img src="img/img_Dashbord/botao-de-seta-para-a-esquerda-do-teclado.png" alt="Voltar" width="20"> Voltar
+            </a>
+        </div>
+        <form id="formFiltro" class="filtro-form">
+            <select id="estado">
+                <option value="12">Acre</option>
+                <option value="27">Alagoas</option>
+                <option value="13">Amazonas</option>
+                <option value="16">Amapá</option>
+                <option value="29">Bahia</option>
+                <option value="23">Ceará</option>
+                <option value="53">Distrito Federal</option>
+                <option value="32">Espírito Santo</option>
+                <option value="52">Goiás</option>
+                <option value="21">Maranhão</option>
+                <option value="51">Mato Grosso</option>
+                <option value="50">Mato Grosso do Sul</option>
+                <option value="31">Minas Gerais</option>
+                <option value="15">Pará</option>
+                <option value="25">Paraíba</option>
+                <option value="41">Paraná</option>
+                <option value="26">Pernambuco</option>
+                <option value="22">Piauí</option>
+                <option value="33">Rio de Janeiro</option>
+                <option value="24">Rio Grande do Norte</option>
+                <option value="43">Rio Grande do Sul</option>
+                <option value="11">Rondônia</option>
+                <option value="14">Roraima</option>
+                <option value="42">Santa Catarina</option>
+                <option value="35">São Paulo</option>
+                <option value="28">Sergipe</option>
+                <option value="17">Tocantins</option>
+            </select>
+
+            <select id="ciclo">
+                <option value="AI">Anos Iniciais (AI)</option>
+                <option value="AF">Anos Finais (AF)</option>
+                <option value="EM">Ensino Médio (EM)</option>
+            </select>
+
+            <select id="ano">
+                <option value="2017">2017</option>
+                <option value="2019" selected>2019</option>
+                <option value="2020">2020</option>
+                <option value="2023">2023</option>
+            </select>
+
+            <button type="submit">Verificar</button>
+        </form>
+
+    </header>
+
+    <main>
+        <!-- Elementos obrigatórios para JS funcionar -->
+        <div id="loading" style="display: none;">Carregando dados...</div>
+        <div id="error" class="error" style="display: none; color: red;"></div>
+
+        <div class="layout-geral">
+            <!-- gráfico + cards -->
+            <div class="lado-esquerdo">
+                <canvas id="grafico" width="200" height="100"></canvas>
+                <div id="cardsContainer" class="cards-container" style="display: none;"></div>
+            </div>
+        </div>
+        <section class="section_conteudo_4" id="Perguntas">
+            <div class="section_conteudo_4_div">
+                <div class="title-container">
+                    <span>Perguntas</span> frequentes
+                </div>
+                <div class="pergunta">
+                    <div class="title-pergunta">
+                        <p>O que é o IDEB?</p>
+                        <img src="img/img_Dashbord/arrow.svg" alt="drop-down icon" class="icon">
+                    </div>
+
+                    <div class="texto-pergunta">
+                        <p>É o Índice de Desenvolvimento da Educação Básica, que mede a qualidade do ensino nas escolas
+                            públicas do Brasil</p>
+                    </div>
+                </div>
+
+                <div class="pergunta">
+                    <div class="title-pergunta">
+                        <p>Como os dados são atualizados?</p>
+                        <img src="img/img_Dashbord/arrow.svg" alt="drop-down icon" class="icon">
+                    </div>
+
+                    <div class="texto-pergunta">
+                        <p>Os dados são coletados periodicamente pelo INEP e outras fontes públicas confiáveis.</p>
+                    </div>
+                </div>
+
+                <div class="pergunta">
+                    <div class="title-pergunta">
+                        <p>O que significa evasão escolar?</p>
+                        <img src="img/img_Dashbord/arrow.svg" alt="drop-down icon" class="icon">
+                    </div>
+                    <div class="texto-pergunta">
+                        <p>É quando um aluno deixa de frequentar a escola antes de concluir a etapa de ensino.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Bibliotecas -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/js_dashboard.js/componente.api.js"></script>
+    <script src="js/js_dashboard.js/perguntas.js"></script>
 </body>
+
 </html>

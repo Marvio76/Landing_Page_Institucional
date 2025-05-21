@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+select {
+    appearance: none;
+    background-image: url('/img/img_Dashbord/seta-formulario.png');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 16px;
+    padding-right: 30px;
+    border: 1px solid;
+    border-radius: 5px;
+    height: 40px;
+    background-color: blue;
+    text-align: center;
+    color: #FEFEFE;
+    font-size: 3vh;
+    font-weight: 400;
+}
+
+header {
+    position: relative;
+    padding: 20px;
+    height: auto;
+}
+
+.btn-voltar {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-voltar:hover {
+    background-color: #0056b3;
+}
+
+.btn-voltar img {
+    width: 20px;
+    height: auto;
+}
+
+.filtro-form {
+    width: fit-content;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    background-color: rgb(37, 37, 75);
+    color: #FEFEFE;
+    border: none;
+    height: 40px;
+    width: 100px;
+    font-size: 3vh;
+    font-weight: 400;
+    border-radius: 5px;
+}
+
+/*Correção para telas pequenas (até 870px) */
+@media (max-width: 870px) {
+    header {
+        padding-top: 80px; 
+    }
+
+    .btn-voltar {
+        position: static; 
+        margin: 0 auto 10px auto;
+        display: block;
+        text-align: center;
+        align-items: center;
+    }
+
+    .filtro-form {
+        flex-direction: column;
+    }
+
+    select,
+    button {
+        width: 80vw;
+        font-size: 2.5vh;
+    }
+}
