@@ -1,11 +1,71 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Acesso à Educação Brasil</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/styles.css" />
 </head>
 <body>
-    
+  <header>
+    <div><strong>Acesso à educação Brasil</strong></div>
+    <nav>
+      <button>Sobre nós</button>
+      <button>FAQ</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Como anda a Educação Básica no Brasil?</h1>
+        <p>Explore dados reais sobre evasão escolar, IDEB e infraestrutura das escolas brasileiras.</p>
+        <a href="dashboard.html" class="btn-dashboard">Acessar Dashboard</a>        
+      </div>
+      <div class="hero-images">
+        <img src="img/sala.png" alt="Estudantes em sala de aula">
+        <img src="img/aula2.png" alt="Professor em aula">
+      </div>
+    </section>
+
+    <section id="sobre">
+      <h2 class="section-title">Sobre o projeto</h2>
+      <div class="about-text">
+        <p>O desenvolvimento dessa landing page e do dashboard integra as atividades práticas dos cursos de UX/UI Design e Front-end do programa Trilhas, uma iniciativa da Secretaria de Estado da Ciência, Tecnologia e Inovação (SECTI) em parceria com a FAPEMA.</p>
+        <p>A proposta tem como objetivo aplicar, de forma prática, os conhecimentos adquiridos ao longo das trilhas formativas, promovendo uma experiência completa de criação digital — desde a concepção visual da interface até a implementação funcional das soluções.</p>
+        <p>Por meio desse projeto, os participantes têm a oportunidade de desenvolver habilidades técnicas, criativas e colaborativas, alinhadas às demandas reais do mercado de tecnologia e inovação.</p>
+      </div>
+    </section>
+
+    <section class="content-img">
+      <img src="img/estudante.png" alt="Estudante usando laptop" style="max-width:300px">
+      <div class="team-text">
+        <h2 class="section-title">Sobre nós</h2>
+        <p>Somos um grupo formado por 8 alunos do programa Trilhas: 4 da trilha de UX/UI Design e 4 da trilha de Front-end. Trabalhamos de forma colaborativa e multidisciplinar, unindo criatividade, empatia e lógica de programação para desenvolver produtos digitais com propósito. Nosso foco é entregar soluções funcionais, acessíveis e com uma experiência agradável para os usuários.</p>
+      </div>
+    </section><br><br>
+
+    <section class="access">
+      <h2>Clique abaixo e veja os indicadores educacionais da sua cidade, estado ou região</h2>
+      <a href="dashboard.html" class="btn-dashboard">Acessar Dashboard</a>  
+    </section>
+
+    <section class="faq" id="faq">
+      <h3>FAQ (Perguntas Frequentes):</h3>
+      <div class="faq-box">
+        <strong>O que é o IDEB?</strong>
+        <p>O Índice de Desenvolvimento da Educação Básica (Ideb) é um indicador que mede a qualidade da educação em escolas públicas e privadas no Brasil, considerando o fluxo escolar e as médias de desempenho nas avaliações.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Acesso à Educação Brasil. Todos os direitos reservados.</p>
+    <p>Desenvolvido por alunos do Programa Trilhas Inova</p>
+  </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
