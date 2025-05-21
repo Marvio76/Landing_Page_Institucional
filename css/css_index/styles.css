@@ -98,6 +98,15 @@ a.btn-dashboard {
   font-weight: bold;
   transition: background-color 0.3s ease;
 }
+.btn-dashboard.btn-white {
+  background-color: white;
+  color: #2563eb;
+}
+
+.btn-dashboard.btn-white:hover {
+  background-color: #e0e7ff;
+}
+
 
 a.btn-dashboard:hover {
   background: #1d4ed8;
@@ -265,14 +274,14 @@ footer {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 400px) {
   .hero-text h1 {
     font-size: 1.75rem;
   }
 
   .hero-images img {
     width: 100%;
-    max-width: 150px;
+    max-width: 175px;
   }
 
   .about-text, .team-text {
